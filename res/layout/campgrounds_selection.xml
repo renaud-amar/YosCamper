@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yosemite Valley campgrounds:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNorthPines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North Pines" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLowerPines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lower Pines" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUpperPines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upper Pines" />
+    
+    <View
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outside Yosemite Valley:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCraneFlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crane Flat" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHogdonMeadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hogdon Meadow" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWawona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wawona" />
+    
+    <View
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuolumne Meadows:" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTuolumneMeadows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuolumne Meadows" />
+
+</LinearLayout>

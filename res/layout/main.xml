@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	
+	    <TextView
+	        android:id="@+id/textViewDate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Date" />
+	
+	    <Button
+	        android:id="@+id/buttonSelectDate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/textViewDate"
+	        android:text="Select date" />
+	
+	    <TextView
+	        android:id="@+id/textViewNumNights"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonSelectDate"
+	        android:text="Number of nights:" />
+	
+	    <EditText
+	        android:id="@+id/editTextNumNights"
+	        android:layout_width="63dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonSelectDate"
+	        android:layout_toRightOf="@id/textViewNumNights"
+	        android:inputType="number"
+	        android:text="1" />
+	    
+	    <View
+	        android:id="@+id/separator1"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="1dp"
+	    	android:layout_below="@id/editTextNumNights"
+	    	android:background="@android:color/darker_gray"/>
+		<View
+		    android:id="@+id/space1"
+  			android:layout_width="1dp"
+  			android:layout_height="5dp"
+  			android:layout_below="@id/separator1" />
+	    <Button
+	        android:id="@+id/buttonSelectCampgrounds"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/space1"
+	        android:text="Select campgrounds" />
+	    
+	    <TextView
+	        android:id="@+id/textViewSelectedCampgrounds"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonSelectCampgrounds"
+	        android:text="Selected campgrounds: All" />
+	    
+	    <View
+		    android:id="@+id/space2"
+  			android:layout_width="1dp"
+  			android:layout_height="5dp"
+  			android:layout_below="@id/textViewSelectedCampgrounds" />
+	    
+	    <View
+	        android:id="@+id/separator2"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="1dp"
+	    	android:layout_below="@id/space2"
+	    	android:background="@android:color/darker_gray"/>
+	    
+	    <View
+		    android:id="@+id/space3"
+  			android:layout_width="1dp"
+  			android:layout_height="5dp"
+  			android:layout_below="@id/separator2" />
+	    <TextView
+	        android:id="@+id/textViewSearchFreq"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/space3"
+	        android:text="Search frequency (minutes):" />
+	
+	    <EditText
+	        android:id="@+id/editTextSearchFreq"
+	        android:layout_width="68dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/space3"
+	        android:layout_toRightOf="@id/textViewSearchFreq"
+	        android:inputType="number" 
+	        android:text="0" />
+	
+	    <TextView
+	        android:id="@+id/textViewSearchDuration"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/editTextSearchFreq"
+	        android:text="Search duration (hours):" />	
+	    <EditText
+	        android:id="@+id/editTextSearchDuration"
+	        android:layout_width="68dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/editTextSearchFreq"
+	        android:layout_toRightOf="@id/textViewSearchDuration"
+	        android:inputType="number"
+	        android:text="2" />
+	    	
+	    <Button
+	        android:id="@+id/buttonSearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/editTextSearchDuration"
+	        android:text="Search!" />
+		
+	    <Button
+	        android:id="@+id/buttonStop"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/editTextSearchDuration"
+	        android:layout_toRightOf="@id/buttonSearch"
+	        android:text="Stop!" />
+	    
+	    <View
+	        android:id="@+id/separator3"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="1dp"
+	    	android:layout_below="@id/buttonStop"
+	    	android:background="@android:color/darker_gray"/>	
+	    <TextView
+	        android:id="@+id/textViewResults"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/separator3"
+	        android:text="" />
+	
+	</RelativeLayout>
+</ScrollView>
